@@ -1,0 +1,42 @@
+// ------------------------------- Reset ------------------------------------
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+picture {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+// ------------------------------- Variáveis ------------------------------------
+  // Cores
+  $blue: #6DD6DA;
+  $light-blue: #95D9DA;
+  $light-gray: #A2ABB5;
+  $dark-gray: #817F82;
+  $purple: #AE8CA3;
