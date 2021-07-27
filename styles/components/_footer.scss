@@ -1,0 +1,18 @@
+footer {
+  .logo {
+    text-align: center;
+  }
+
+  .menus {
+    display: flex;
+    justify-content: space-between;
+
+    .menu1 {
+      ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: .5rem 3rem;
+      }
+    }
+  }
+}

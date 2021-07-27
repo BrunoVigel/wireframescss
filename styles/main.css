@@ -5,11 +5,6 @@
           box-sizing: border-box;
 }
 
-body {
-  font-size: 18px;
-  font-family: 'Barlow', serif;
-}
-
 ul {
   list-style: none;
 }
@@ -20,7 +15,6 @@ a {
 
 img {
   width: 100%;
-  height: 100%;
 }
 
 picture {
@@ -30,5 +24,87 @@ picture {
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: #6DD6DA;
+}
+
+#products {
+  background-color: #A2ABB5;
+  max-width: 89vw;
+}
+
+#products .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#products .container img:nth-child(1) {
+  max-width: 450px;
+  margin: 5rem 2rem 5rem 5rem;
+}
+
+#products .container img:last-child {
+  max-width: 650px;
+  max-height: 400px;
+  position: absolute;
+  top: 15%;
+  right: 3%;
+}
+
+#products .container .text {
+  margin-top: 5rem;
+  max-width: 25rem;
+  position: relative;
+}
+
+#products .container .text p {
+  font-size: 1.5rem;
+}
+
+#products .container .text h2 {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+#products .container .text button {
+  font-size: 1.5rem;
+  color: white;
+  border: none;
+  background-color: black;
+  padding: 1.5rem 4rem;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  margin-top: 4.4rem;
+}
+
+#products .container .text button:hover {
+  color: black;
+  background-color: white;
+}
+
+footer .logo {
+  text-align: center;
+}
+
+footer .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .menus .menu1 ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: .5rem 3rem;
 }
 /*# sourceMappingURL=main.css.map */
