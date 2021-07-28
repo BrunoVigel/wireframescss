@@ -11,10 +11,31 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
+}
+
+a.link {
+  position: relative;
+}
+
+a.link::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -1px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+a.link:hover::after {
+  width: 100%;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 picture {
@@ -30,6 +51,30 @@ body {
   background-color: #6DD6DA;
 }
 
+section {
+  margin-bottom: 5rem;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
+#icons {
+  padding: 0 20rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#icons img {
+  border-radius: 50%;
+}
+
 #products {
   background-color: #A2ABB5;
   max-width: 89vw;
@@ -39,25 +84,25 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 #products .container img:nth-child(1) {
   max-width: 450px;
-  margin: 5rem 2rem 5rem 5rem;
+  margin: 5rem 2rem 5rem 0;
 }
 
 #products .container img:last-child {
   max-width: 650px;
   max-height: 400px;
   position: absolute;
-  top: 15%;
-  right: 3%;
+  top: 20%;
+  right: -6.7%;
 }
 
 #products .container .text {
   margin-top: 5rem;
   max-width: 25rem;
-  position: relative;
 }
 
 #products .container .text p {
@@ -87,8 +132,32 @@ body {
   background-color: white;
 }
 
+#socials p {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#socials div img {
+  max-height: 500px;
+}
+
+#socials div img:nth-child(2) {
+  margin-top: 8rem;
+}
+
 footer .logo {
   text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 5rem;
 }
 
 footer .menus {
@@ -100,11 +169,42 @@ footer .menus {
           justify-content: space-between;
 }
 
+footer .menus .logo {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
 footer .menus .menu1 ul {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: .5rem 3rem;
+}
+
+footer .menus .menu2 input,
+footer .menus .menu2 button {
+  background-color: #6DD6DA;
+  border: none;
+  border-bottom: 1px black solid;
+  padding-bottom: .5rem;
+  font-size: 1rem;
+}
+
+footer .menus .menu2 button {
+  margin-left: -.3rem;
+  cursor: pointer;
+}
+
+footer .menus .menu3 ul {
+  display: -ms-grid;
+  display: grid;
+  gap: .5rem;
+}
+
+footer .a {
+  text-align: center;
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */

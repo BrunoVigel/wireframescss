@@ -1,0 +1,17 @@
+#socials {
+  p {
+    font-size: 3rem;
+    text-align: center;
+  }
+  div {
+    display: flex;
+    justify-content: space-between;
+
+    img {
+      max-height: 500px;
+      &:nth-child(2){
+        margin-top: 8rem
+      }
+    }
+  }
+}
