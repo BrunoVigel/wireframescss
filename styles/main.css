@@ -172,7 +172,7 @@ section {
 
 #products {
   background-color: #A2ABB5;
-  max-width: 89vw;
+  max-width: 89%;
 }
 
 #products .container {
@@ -301,5 +301,43 @@ footer .menus .menu3 ul {
 footer .a {
   text-align: center;
   margin-top: 3rem;
+}
+
+@media (max-width: 1100px) {
+  #products {
+    max-width: 100%;
+  }
+  #products .container {
+    display: block;
+  }
+  #products:last-child {
+    position: static;
+  }
+  #socials div {
+    display: block;
+  }
+  #socials div img {
+    margin-top: 1rem;
+  }
+  #socials div img:nth-child(2) {
+    margin-top: 1rem;
+  }
+  footer .logo {
+    margin-bottom: 2rem;
+  }
+  footer .menus {
+    display: block;
+    text-align: center;
+  }
+  footer .menus .logo {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  footer .menus .menu1 ul {
+    display: block;
+  }
+  footer .menus .menu2 {
+    margin: 2rem 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
