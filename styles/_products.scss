@@ -5,20 +5,17 @@
 
   .container {
     display: flex;
-    position: relative;
     
+
+    .product-slider {
+      position: relative;
+      top: 4.5rem;
+      left: 15rem;
+    }
+
     img {
-      &:nth-child(1) {
-        max-width: 450px;
-        margin: 5rem 2rem 5rem 0;
-      }
-  
-      &:last-child {
-        max-width: 650px;
-        max-height: 400px;
-        position: absolute;
-        top: 20%;
-        right: -6.7%;
+      &:first-child {
+        padding:5rem 2rem 5rem 0;
       }
     }
     .text {
