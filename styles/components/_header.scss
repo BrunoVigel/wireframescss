@@ -1,0 +1,35 @@
+header {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      font-size: 4rem;
+      font-weight: bolder;
+      margin: 1rem 0;
+    }
+
+    .menu {
+      opacity: 1;
+      visibility: visible;
+
+      ul {
+        display: flex;
+        gap: 2rem;
+      }
+    }
+
+    .user-utils {
+      display:flex;
+
+      .user-profile {
+        margin-right: 1rem;
+      }
+
+      .toggle {
+        display:none;
+      }
+    }
+  }
+}

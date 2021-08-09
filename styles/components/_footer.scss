@@ -45,6 +45,16 @@ footer {
       ul {
         display: grid;
         gap: .5rem;
+
+        li {
+          
+          a {
+            display: inline-block;
+            justify-content: center;
+            align-items: center;
+            gap: .5rem
+          }
+        }
       }
     }
   }

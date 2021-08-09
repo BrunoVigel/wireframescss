@@ -7,10 +7,9 @@
     display: flex;
     justify-content: space-between;
 
-    img {
-      max-height: 500px;
-      &:nth-child(2){
-        margin-top: 8rem
+    a{
+      &:nth-child(2) {
+        margin-top: 5rem;
       }
     }
   }
