@@ -8,14 +8,14 @@
 
     .product-slider {
       position: relative;
-      top: 4.5rem;
+      top: 10rem;
       right: -14%;
+      width: 39.12%;
+      height: 100%
     }
 
-    img {
-      &:first-child {
+    .imagewrapper {
         padding:5rem 2rem 5rem 0;
-      }
     }
     .text {
       margin-top:5rem;
