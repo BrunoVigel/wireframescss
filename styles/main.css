@@ -159,52 +159,65 @@ header nav .user-utils .toggle {
   margin-bottom: 40em;
 }
 
-#home .text {
-  max-width: 26.5em;
-  padding: 8em 0 12em 0;
+#home .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#home .text h1 {
+#home .container .text {
+  max-width: 25%;
+  padding: 8em 0 12rem 0;
+}
+
+#home .container .text h1 {
   font-size: 3.5rem;
   margin: .7em 0;
 }
 
-#home .text p {
+#home .container .text p {
   font-size: 1.5em;
 }
 
-#home .card1,
-#home .card2,
-#home .card3 {
-  background-color: #home .card1, #home .card2, #home .card3 light-gray;
+#home .container .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  width: 60%;
+}
+
+#home .container .cards .card1,
+#home .container .cards .card2,
+#home .container .cards .card3 {
+  background-color: #home .container .cards .card1, #home .container .cards .card2, #home .container .cards .card3 light-gray;
   font-size: 1.5em;
-  max-width: 500px;
   text-align: center;
 }
 
-#home .card1 p:nth-child(2),
-#home .card2 p:nth-child(2),
-#home .card3 p:nth-child(2) {
+#home .container .cards .card1 p:nth-child(2),
+#home .container .cards .card2 p:nth-child(2),
+#home .container .cards .card3 p:nth-child(2) {
   font-weight: bold;
   padding: 1em 0;
 }
 
-#home .card1 p:nth-child(3),
-#home .card2 p:nth-child(3),
-#home .card3 p:nth-child(3) {
+#home .container .cards .card1 p:nth-child(3),
+#home .container .cards .card2 p:nth-child(3),
+#home .container .cards .card3 p:nth-child(3) {
   padding: 0 3rem 1.5em;
 }
 
-#home .card1 {
-  position: absolute;
-  top: 12.4%;
-  left: 42%;
+#home .container .cards .card1 {
+  margin-top: 4.5rem;
+  width: 50%;
 }
 
-#home .card-right {
-  position: absolute;
-  right: 4.2%;
-  top: 5%;
+#home .container .cards .card-right {
+  margin-left: 8rem;
+  width: 50%;
 }
 
 #home .scroll-down p {
@@ -364,6 +377,15 @@ footer .a {
   margin: 3rem 0;
 }
 
+@media (max-width: 1400px) {
+  #products .container .text p {
+    font-size: 1rem;
+  }
+  #products .container .text h2 {
+    margin: .5rem 0;
+  }
+}
+
 @media (max-width: 1100px) {
   .container {
     padding: 0 2.5rem;
@@ -469,13 +491,40 @@ footer .a {
             justify-content: center;
     margin-bottom: 5rem;
   }
-  #home .card1,
-  #home .card2,
-  #home .card3 {
+  #home .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #home .container .text {
+    max-width: 100%;
+    text-align: center;
+    padding: 2rem 0 0 0;
+  }
+  #home .container .cards {
     position: static;
-    top: 0;
-    left: 0;
-    right: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #home .container .cards .card1 {
+    width: 100%;
+  }
+  #home .container .cards .card-right {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
   }
   #home .scroll-down p {
     display: none;

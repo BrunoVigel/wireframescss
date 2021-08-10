@@ -1,3 +1,19 @@
+@media (max-width: 1400px) {
+  #products {
+    .container {
+      .text {
+        p {
+          font-size: 1rem;
+        }
+
+        h2 {
+          margin: .5rem 0;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1100px) {
   .container {
     padding: 0 2.5rem;
@@ -117,13 +133,33 @@
     justify-content: center;
     margin-bottom: 5rem;
 
-    .card1,
-    .card2,
-    .card3 {
-      position:static;
-      top:0;
-      left:0;
-      right: 0;
+    .container {
+      flex-direction: column;
+      justify-content: center;
+
+      .text {
+        max-width: 100%;
+        text-align: center;
+        padding: 2rem 0 0 0;
+      }
+
+      .cards {
+        position: static;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+
+        .card1 {
+          width: 100%;
+        }
+
+        .card-right {
+          width: 100%;
+          align-items: center;
+          margin-left: 0;
+        }
+      }
     }
 
     .scroll-down {
