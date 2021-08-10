@@ -3,9 +3,9 @@ var swiper = new Swiper('.main-swiper', {
     delay: 2000
   },
   pagination: {
-    el: '.swiper-pagination1'
+    el: '.swiper-pagination1',
+    clickable: true
   },
-  paginationClickable: true,
   autoHeight: true
 })
 

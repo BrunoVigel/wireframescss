@@ -212,11 +212,12 @@ header nav .user-utils .toggle {
 
 #home .container .cards .card1 {
   margin-top: 4.5rem;
+  margin-left: 5rem;
   width: 50%;
 }
 
 #home .container .cards .card-right {
-  margin-left: 8rem;
+  margin-left: 2rem;
   width: 50%;
 }
 
@@ -377,12 +378,17 @@ footer .a {
   margin: 3rem 0;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1825px) {
   #products .container .text p {
     font-size: 1rem;
   }
   #products .container .text h2 {
+    font-size: 2rem;
     margin: .5rem 0;
+  }
+  #products .container .text button {
+    font-size: 1rem;
+    padding: .5rem 2rem;
   }
 }
 
@@ -518,6 +524,7 @@ footer .a {
   }
   #home .container .cards .card1 {
     width: 100%;
+    margin: 0;
   }
   #home .container .cards .card-right {
     width: 100%;
@@ -564,7 +571,9 @@ footer .a {
     margin-bottom: 2rem;
   }
   #products .container .product-slider {
-    position: static;
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     margin-bottom: 2rem;
   }
@@ -584,7 +593,7 @@ footer .a {
     width: 100%;
   }
   #socials div a:nth-child(2) {
-    margin-top: 1rem;
+    margin-top: 0;
   }
   #socials div a img {
     margin-top: 1rem;
