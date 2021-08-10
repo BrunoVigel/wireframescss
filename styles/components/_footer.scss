@@ -45,14 +45,16 @@ footer {
       ul {
         display: grid;
         gap: .5rem;
+        justify-content: center;
 
         li {
           
           a {
-            display: inline-block;
+            display: flex;
             justify-content: center;
             align-items: center;
-            gap: .5rem
+            gap: .5rem;
+            max-width: 89px;
           }
         }
       }
@@ -61,6 +63,6 @@ footer {
 
   .a {
     text-align: center;
-    margin-top: 3rem;
+    margin: 3rem 0;
   }
 }

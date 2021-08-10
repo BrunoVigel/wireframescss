@@ -1,10 +1,11 @@
-var swiper = new Swiper('.mySwiper', {
+var swiper = new Swiper('.main-swiper', {
   autoplay: {
     delay: 2000
   },
   pagination: {
-    el: '.swiper-pagination'
+    el: '.swiper-pagination1'
   },
+  paginationClickable: true,
   autoHeight: true
 })
 

@@ -107,7 +107,30 @@
     padding-top: 200px;
   }
 
+  #icons {
+    padding: 0;
+    justify-content: center;
+  }
 
+  #home {
+    flex-direction: column;
+    justify-content: center;
+
+    .card1,
+    .card2,
+    .card3 {
+      position:static;
+      top:0;
+      left:0;
+      right: 0;
+    }
+
+    .scroll-down {
+      p {
+        display: none;
+      }
+    }
+  }
 
   #products {
     max-width: 100%;
@@ -118,6 +141,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      img {
+        &:first-child {
+          padding:0;
+        }
+      }
 
       .text {
         align-items: center;
@@ -138,10 +167,15 @@
       flex-direction: column;
       align-items: center;
 
-      img {
-        margin-top:1rem;
+      a {
+        width: 100%;
+
         &:nth-child(2) {
           margin-top: 1rem;
+      }
+
+      img {
+        margin-top:1rem;
         }
       }
     }
